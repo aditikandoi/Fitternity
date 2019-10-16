@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div id=header1>
+        <table>
+            <tr>
+                <td width=15%> <img src="g1e.jpeg" height="150" width="150"> </img></td>
+                <td width=70%></td>
+                <td width=15%>
+                    <h1 text:align="right"> FITTERNITY </h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id=menubar>
+        <ul>
+            <li><a class="active" href="gym1fi.html">Home</a></li>
+            <li><a href="#news">About Us</a></li>
+            <li><a href="testsignup.html">SignUp</a></li>
+            <li><a href="BMIcal.html">BMI Calculater</a></li>
+        </ul>
+    </div>
+
+
+    <div  style="background-color: #11181d">
+        <br>
+        <table>
+            <tr>
+                <td width=40%> <img src="offer.jpg" width=100%> </img> </td>
+                <td width=20% style="text-align: center">
+                    <form name="myForm" action="/action_page.php> onsubmit="return validateForm() method="post">
+                        <p style="color:white;" ;>
+                            First name:<br>
+                            <input type="text" name="firstname">
+                            <br>
+                            Last name:<br>
+                            <input type="text" name="lastname">
+                            <br>
+                            Mobile number:<br>
+                            <input type="text" name="number">
+                            <br>
+
+                            <form>
+                                <p style="color:white;">Location:</p>
+                                <select name="location">
+                                    <option value="malad">Andheri</option>
+                                    <option value="bandra">Bandra</option>
+                                    <option value="boriwali">Boriwali</option>
+                                    <option value="goregaon">Goregaon</option>
+                                    <option value="kandivali">Kandivali</option>
+                                    <option value="malad">Malad</option>
+                                </select>
+                                <br>
+                            </form>
+                            <p style="color:white;">Gender</p>
+                            <form>
+                                <p style="color:white;">
+                                    <input type="radio" name="gender" value="male" checked> Male<br>
+                                    <input type="radio" name="gender" value="female"> Female<br>
+                                    <input type="radio" name="gender" value="other"> Other
+                                    <br>
+                                </p>
+                            </form>
+
+                            <p style="color:white;">Activity</p>
+                            <form>
+                                <p style="color:white;">
+                                    <input type="radio" name="activity" value="gym" checked> Gym<br>
+                                    <input type="radio" name="activity" value="dance"> Dance<br>
+                                    <br>
+                                </p>
+                            </form>
+
+
+
+                            <button onclick="validateForm()">Submit</button>
+                        </p>
+                    </form>
+                </td>
+                <td width=40%> <img src="offer.jpg" width=100%> </td>
+
+            </tr>
+        </table>
+        <script>
+            function validateForm()
+            {
+                var x= document.forms["myForm"]["firstname"].value;
+                var y= document.forms["myForm"]["lastname"].value;
+                var z= document.forms["myForm"]["number"].value;
+              //  Boolean ans= /^([7|8|9][0-9]d{9})$/.test(z);
+                if( x== "" || y=="" ||/^(7|8|9)\d{9}$/.test(z)!=true)
+                    {
+                        alert("Please fill the correct information.");
+                    }
+            }
+             //   var z= /^\[7|8|9][0-9]d{9}$/;
+               
+        </script>
+    </div>
+
+    <div>
+        <ul class="social-media-icons">
+            <li><a class="twitter" href="#"></a></li>
+            <li><a class="facebook" href="#"></a></li>
+            <li><a class="dribbble" href="#"></a></li>
+            <li><a class="pinterest" href="#"></a></li>
+            <li><a class="deviantart" href="#"></a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

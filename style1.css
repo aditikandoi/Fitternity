@@ -1,0 +1,121 @@
+h1 {
+  text-align: right;
+  font-size: 60px;
+}
+
+#header1 {
+  background-color: white;
+}
+
+body {
+  background-color: #cfcfcf;
+  background-size: auto;
+  padding: 0%;
+  font: Helvetica;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #11181d;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #61686f;
+}
+
+.active {
+  background-color: #ff5355;
+}
+
+#footer1 {
+  background-color: #ff8782;
+}
+
+.social-media-icons {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-media-icons li {
+  display: inline-block;
+}
+
+.social-media-icons a {
+  background-image: url(social-icons.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 28px;
+  transition: all 350ms ease-out;
+  -webkit-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  width: 23px;
+}
+
+.social-media-icons a:hover {
+  background-position-y: 2px;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.twitter {
+  background-position: 0 0;
+}
+
+.facebook {
+  background-position: -52px 0;
+}
+
+.dribbble {
+  background-position: -104px 0;
+}
+
+.pinterest {
+  background-position: -157px 0;
+}
+
+.deviantart {
+  background-position: -210px 0;
+}
+
+table {
+  width: 100%;
+}
+
+#pics {
+  text-align: center
+}
+
+.bmipics {
+  padding: 7px;
+  height: 750px;
+  width: 280px;
+  overflow: hidden;
+}
+
+.slides {
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+.course-cards {
+  background-color: #ff5355;
+}
